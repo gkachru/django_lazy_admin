@@ -83,6 +83,11 @@ The column content is rendered using the lazy_admin/lazy_column.html template. Y
 
 - Support Model class methods used as custom columns as well with the same decorator.
 
+
+## Authors
+
+The primary author of this package is Gautam Kachru <gautam@live.in>
+
 ## License
 
 BSD 3-clause. See LICENSE file.
