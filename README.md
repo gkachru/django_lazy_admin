@@ -41,7 +41,9 @@ class MyAdmin(admin.ModelAdmin):
 
 Ideally, install the package in your virtual environment.
 
-> pip install django_lazy_admin
+```
+pip install django_lazy_admin
+```
 
 Now, add the app to your django setting INSTALLED_APPS.
 
@@ -67,11 +69,15 @@ And, you're done!
 
 You can turn off all lazy columns by the following in your main django settings.py file.
 
-> LAZY_ADMIN_ALLOW = False
+```python
+LAZY_ADMIN_ALLOW = False
+```
 
 The column content is rendered using the lazy_admin/lazy_column.html template. You can over-ride this in your own app. Or you can use a parameter to the decorator.
 
-> @lazy_admin_column(template='my_custom_template.html')
+```
+@lazy_admin_column(template='my_custom_template.html')
+```
 
 ## TODO
 
