@@ -21,7 +21,7 @@ class MyAdmin(admin.ModelAdmin):
 Lazy custom columns are loaded over AJAX by user action. This is achieved by adding a decorator over any custom list column function you've added in your ModelAdmin class.
 
 ```python
-from django_lazy_admin import lazy_admin_column
+from lazy_admin import lazy_admin_column
 
 class MyAdmin(admin.ModelAdmin):
     change_list_template = 'lazy_admin/change_list.html'
@@ -50,7 +50,7 @@ Now, add the app to your django setting INSTALLED_APPS.
 ```python
 INSTALLED_APPS = (
     '...',
-    'django_lazy_admin'
+    'lazy_admin'
 )
 ```
 
@@ -59,7 +59,7 @@ And, install the URL handler in your root url conf or in some other url configur
 ```python
 urlpatterns = patterns('',
     '...',
-    url(r'^admin/lazy/', include('django_lazy_admin.urls')),
+    url(r'^admin/lazy/', include('lazy_admin.urls')),
 )
 ```
 
