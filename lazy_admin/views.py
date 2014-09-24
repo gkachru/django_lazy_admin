@@ -3,7 +3,10 @@ from django.contrib import admin
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponseNotFound, HttpResponse
 from django.contrib.admin.views.decorators import staff_member_required
+from django.views.decorators.csrf import csrf_exempt
 
+
+@csrf_exempt
 @staff_member_required
 def lazy_column_view(request):
 	'''
