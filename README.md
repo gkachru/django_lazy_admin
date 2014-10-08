@@ -1,6 +1,6 @@
 # django_lazy_admin
 
-Django's automatic admin list screens are awesome! But sometimes you need custom columns to display information that requires some big queries or perhaps some heavy computation. This can slow down displaying the entire list screen. This app is meant to address that need, but converting a custom column in to one that can be dynamically loaded over AJAX on user action.
+Django's automatic admin list screens are awesome! But sometimes you need custom columns to display information that requires some big queries or perhaps some heavy computation. This can slow down displaying the entire list screen. This app is meant to address that need by converting a custom column in to one that can be dynamically loaded over AJAX on user action.
 
 ## Regular custom column
 
